@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+
+.container {
+  max-width: 1440px;
+  background-color: hsl(275, 100%, 97%);
+  min-height: 100vh;
+  position: relative;
+}
+.container .container-header {
+  background-color: hsl(292, 42%, 14%);
+  height: 40vh;
+}
+.container .container-header img {
+  width: 100%;
+}
+.container .faq-card {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  height: 500px;
+  width: 500px;
+  padding: 2rem;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+@media (max-width: 400px) {
+  .container .faq-card {
+    width: 100%;
+  }
+}
+.container .faq-card .card-header {
+  display: flex;
+  gap: 1rem;
+}
+.container .faq-card .card-header img {
+  width: 30px;
+}
+.container .faq-card .card-header h1 {
+  color: hsl(292, 42%, 14%);
+}
+.container .faq-card .card-content {
+  margin-top: 2rem;
+}
+.container .faq-card .card-content .faq-item {
+  padding: 1rem 0;
+}
+.container .faq-card .card-content .faq-item .item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .faq-card .card-content .faq-item .item-header .question {
+  color: hsl(292, 42%, 14%);
+  font-size: 1.2rem;
+}
+.container .faq-card .card-content .faq-item .item-header button {
+  border: none;
+  background-color: transparent;
+}
+.container .faq-card .card-content .faq-item .item-header img {
+  cursor: pointer;
+}
+.container .faq-card .card-content .faq-item .answer {
+  color: hsl(292, 16%, 49%);
+  padding: 0;
+  border-bottom: 0px solid hsl(275, 100%, 97%);
+  color: hsl(292, 16%, 49%);
+  height: 0;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+.container .faq-card .card-content .active .answer {
+  color: hsl(292, 16%, 49%);
+  padding: 1.5rem 0;
+  height: 100%;
+  border-bottom: 1px solid hsl(275, 100%, 97%);
+  color: hsl(292, 16%, 49%);
+}/*# sourceMappingURL=style.css.map */
